@@ -1,0 +1,1 @@
+Since handin can not upload files larger than 20MB, we remove all the test images to reduce the size. We will show how to run our program in the demo.

@@ -1,0 +1,11 @@
+%% 
+% ??????
+[heart_scale_label,heart_scale_inst] =libsvmread('heart_scale');
+data = heart_scale_inst;
+label = heart_scale_label;
+% ??????
+model = svmtrain(label,data,'-s 0 -t 2 -c 1.2 -g 2.8');
+model
+% ????????????????????
+[PredictLabel,accuracy,decision_values] = svmpredict(label,data,model);
+accuracy
